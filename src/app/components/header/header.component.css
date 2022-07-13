@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar.mat-primary {
+  font-size: xx-large;
+}
+.mat-raised-button {
+  font-size: x-large;
+}

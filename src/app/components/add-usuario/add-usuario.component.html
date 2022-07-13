@@ -1,0 +1,44 @@
+<form class="parent" *ngIf="mostrarAgregarUsuario">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label for="nombreUsuario">Nombre</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="nombre"
+      name="nombre"
+      id="nombreUsuario"
+      [formControl]="nombre_1"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label for="apellidoUsuario">Apellido</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="apellido"
+      name="apellido"
+      id="apellidoUsuario"
+      [formControl]="apellido_1"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label for="rutUsuario">Rut</mat-label>
+    <input matInput type="text" [(ngModel)]="rut" name="rut" id="rutUsuario" [formControl]="rut_1"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label for="mailUsuario">Mail</mat-label>
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="mail"
+      name="mail"
+      id="mailUsuario"
+      [formControl]="mail_1"
+
+    />
+  </mat-form-field>
+  <div class="d-flex justify-content-center">
+    <button type="button" mat-raised-button color="primary" (click)="agregarU()" >Continuar</button>
+  </div>
+</form>

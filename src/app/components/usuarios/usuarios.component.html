@@ -1,0 +1,6 @@
+<app-add-usuario (onAddUser)="addUsuario($event)"></app-add-usuario>
+<div class="wrapper">
+<app-usuario-item *ngFor="let usuario of usuarios"
+[usuario]="usuario">
+</app-usuario-item>
+</div>
